@@ -1,6 +1,6 @@
 # Pixel Converter Tool
 
-A simple web app for converting images to a specified pixel size (e.g., 24x24) using Streamlit.
+A simple web app for converting images to a specified pixel size (e.g., 24x24)
 
 ## Features
 
