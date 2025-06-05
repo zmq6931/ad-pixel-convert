@@ -3,7 +3,11 @@ from PIL import Image
 import io
 import os
 
-st.title("🎈 Pixel Converter Tool")
+col1, col2 = st.columns([1, 8])
+with col1:
+    st.image("ad_logo.png", width=80)
+with col2:
+    st.title("Pixel Converter Tool")
 
 st.write("""
 1. Upload or drag and drop an image below.
