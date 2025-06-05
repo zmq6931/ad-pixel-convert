@@ -22,12 +22,14 @@ width, height = map(int, selected_size.split('x'))
 if uploaded_file is not None:
     # Open image
     image = Image.open(uploaded_file)
-    st.image(image, caption="Original Image", use_column_width=True)
+    imageContainer = st.container()
+    imageContainer.image(image, caption="Original Image")
 
     # Convert pixel size
     converted_image = image.resize((width, height), Image.NEAREST)
     st.write(f"Converted to {width}x{height} pixels:")
-    st.image(converted_image, caption=f"{width}x{height} Pixel Image", use_column_width=False)
+    imageContainer = st.container()
+    imageContainer.image(converted_image, caption=f"{width}x{height} Pixel Image")
 
     # Download button
     buf = io.BytesIO()
