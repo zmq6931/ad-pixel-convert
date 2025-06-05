@@ -3,6 +3,11 @@ from PIL import Image
 import io
 import os
 
+st.set_page_config(
+    page_title="Pixel-Converter-Tool", 
+    page_icon=r"logo.png"
+    )
+
 col1, col2 = st.columns([1.2, 8])
 with col1:
     st.image("logo.png", width=90)
